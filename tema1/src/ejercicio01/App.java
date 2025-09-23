@@ -1,4 +1,4 @@
-package ejercicio1;
+package ejercicio01;
 
 public class App {
 	// Crear dos hilos en el que cada uno de ellos escriba una serie de números

@@ -1,4 +1,4 @@
-package ejercicio3;
+package ejercicio03;
 
 public class Contador {
 	private int numero = 0;

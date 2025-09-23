@@ -1,4 +1,4 @@
-package ejercicio3;
+package ejercicio03;
 
 public class App {
 	// Crear dos hilos que realicen una cuenta común y consecutiva de números:
