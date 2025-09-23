@@ -9,6 +9,5 @@ public class Contador {
 
 	public synchronized void imprimir() {
 		System.out.println(n);
-		
 	}
 }
