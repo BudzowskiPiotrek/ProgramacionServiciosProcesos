@@ -12,7 +12,7 @@ public class Podio {
     }
 
     public void mostrarPodio() {
-        System.out.println("\n--- P O D I O ---");
+        System.out.println("\nP-O-D-I-O");
         for (int i = 0; i < 3; i++) {
             System.out.println((i + 1) + "º: " + ordenLlegada.get(i));
         }
