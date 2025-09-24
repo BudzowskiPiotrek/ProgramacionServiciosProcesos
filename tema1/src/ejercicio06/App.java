@@ -6,6 +6,7 @@ public class App {
 	// En el caso de que el resultado sea de 11 o siete, el jugador ha ganado. En
 	// cualquier otro caso, debe lanzar de nuevo los datos.
 	public static void main(String[] args) {
-
+		Hilo h1 = new Hilo();
+		h1.start();
 	}
 }
