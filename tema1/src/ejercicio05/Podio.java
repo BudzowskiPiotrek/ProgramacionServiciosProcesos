@@ -8,7 +8,7 @@ public class Podio {
 
     public synchronized void registrarLlegada(String nombreCamello) {
         ordenLlegada.add(nombreCamello);
-        System.out.println("¡" + nombreCamello + " ha llegado!");
+        System.out.println(nombreCamello + " ha llegado!");
     }
 
     public void mostrarPodio() {
