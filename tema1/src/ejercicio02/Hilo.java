@@ -2,7 +2,7 @@ package ejercicio02;
 
 public class Hilo implements Runnable {
 	Thread t;
-	String color;
+	private String color;
 	private final String RESET = "\u001b[0m";
 
 	public Hilo(String color) {
