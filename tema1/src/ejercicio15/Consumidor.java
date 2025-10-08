@@ -11,7 +11,7 @@ public class Consumidor implements Runnable {
 
 	public void run() {
 		for (int i = 0; i < 10; i++) {
-			tuberia.retirar(500);
+			tuberia.actuar(-500);
 			System.out.println("Estado despues de sacar " + tuberia.getEstadoCuenta());
 		}
 	}
