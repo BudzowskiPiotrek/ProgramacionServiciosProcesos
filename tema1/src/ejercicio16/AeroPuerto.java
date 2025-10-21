@@ -10,7 +10,7 @@ public class AeroPuerto {
 
 	public void solicitarDespegue(int numero) throws InterruptedException {
 		System.out.println("El avion con nº: " + numero + "solicita el despegue");
-		synchronized (this) {
+		synchronized (lista) {
 			lista.add("Avion: " + numero);
 			System.out.println("El avion: " + numero + " se esta dirigiendo a pista de despegue");
 			dirigirsePista(numero);
@@ -18,7 +18,7 @@ public class AeroPuerto {
 		vuelo(numero);
 	}
 
-	private synchronized void dirigirsePista(int numero) throws InterruptedException {
+	public synchronized void dirigirsePista(int numero) throws InterruptedException {
 		while (!pista.isEmpty()) {
 			wait();
 		}
@@ -28,15 +28,15 @@ public class AeroPuerto {
 		System.out.println("El avion numero: " + numero + "Ha despegado");
 		pista.remove("Avion: " + numero);
 		
-		notifyAll();
+		this.notifyAll();
 	}
 
-	private void vuelo(int numero) throws InterruptedException {
+	public void vuelo(int numero) throws InterruptedException {
 		Thread.sleep((long) (0000 * Math.random()));
 		Aterizar(numero);
 	}
 
-	private synchronized void Aterizar(int numero) throws InterruptedException {
+	public synchronized void Aterizar(int numero) throws InterruptedException {
 		while (!pista.isEmpty()) {
 			wait();
 		}
