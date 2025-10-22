@@ -9,6 +9,7 @@ public class Tobogan {
 	private int total = 1;
 
 	public synchronized void hacerLaCola(Nino nino) {
+		System.out.println("El niño " + nino.getNombre() + " ha llegado");
 		lista.add(nino);
 		notifyAll();
 	}

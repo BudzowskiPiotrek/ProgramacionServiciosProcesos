@@ -11,7 +11,5 @@ public class Atracion {
 			lista[i].start();
 		}
 		tobogan.bajarAtraccion();
-
 	}
-
 }
