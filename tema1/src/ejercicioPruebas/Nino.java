@@ -19,7 +19,7 @@ public class Nino extends Persona implements Runnable {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("El niño " + this.getNombre() + " ha llegado");
+
 		tobogan.hacerLaCola(this);
 	}
 
