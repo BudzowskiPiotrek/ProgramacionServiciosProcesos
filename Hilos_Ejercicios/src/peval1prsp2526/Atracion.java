@@ -1,4 +1,4 @@
-package ejercicioPruebas;
+package peval1prsp2526;
 
 public class Atracion {
 
