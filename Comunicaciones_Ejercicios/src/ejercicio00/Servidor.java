@@ -2,7 +2,6 @@ package ejercicio00;
 
 import java.net.*;
 import java.io.*;
-import java.util.*;
 
 public class Servidor {
 	private static final int PUERTO = 12345;
@@ -26,15 +25,8 @@ public class Servidor {
 
 		} catch (IOException e) {
 			e.printStackTrace();
-		} finally {
-
-			try {
-				entrada.close();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
+		} 
+		
 	}
 
 	public static void main(String[] args) {
