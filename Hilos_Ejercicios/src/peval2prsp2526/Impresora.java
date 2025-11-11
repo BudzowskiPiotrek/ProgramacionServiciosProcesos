@@ -1,4 +1,4 @@
-package peval2prsp2526;
+package peval1prsp2526;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -36,7 +36,7 @@ public class Impresora {
 
 		System.out.println("///////////El Proyecto " + p.getNombre() + " comienza imprimirse");
 		try {
-			Thread.sleep(1000 * p.getTiempo());
+			Thread.sleep(1000 );
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -46,4 +46,3 @@ public class Impresora {
 	}
 
 }
-
