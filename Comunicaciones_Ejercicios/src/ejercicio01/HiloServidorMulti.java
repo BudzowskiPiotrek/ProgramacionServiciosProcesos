@@ -25,7 +25,6 @@ public class HiloServidorMulti extends Thread {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	public void run() {
@@ -51,7 +50,6 @@ public class HiloServidorMulti extends Thread {
 			fEntrada.close();
 			socket.close();
 		} catch (IOException e) {
-
 			e.printStackTrace();
 		}
 
