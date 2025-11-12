@@ -5,10 +5,10 @@ import java.net.*;
 import java.util.Scanner;
 
 public class Cliente {
-	private static final int PUERTO = 12345;
+	private static final int PUERTO = 5000;
 	private String mensajeAEnviar;
 	private String respuesta;
-	private static final String HOST = "localhost";
+	private static final String HOST = "192.168.1.4";
 
 	public void initClient() {
 		try (Socket cliente = new Socket(HOST, PUERTO);

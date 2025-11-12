@@ -6,14 +6,14 @@ import java.util.*;
 
 public class Cliente {
 
-	private static final int PUERTO = 12345;
+	private static final int PUERTO = 5000;
 	Socket cliente;
 	String mensaje;
 	DataOutputStream salida;
 
 	public void initClient() {
 		try {
-			cliente = new Socket("localhost", PUERTO);
+			cliente = new Socket("192.168.1.4", PUERTO);
 			System.out.println("Write....");
 			Scanner sn = new Scanner(System.in);
 			mensaje = sn.nextLine();
