@@ -1,4 +1,4 @@
-package ejercicio00;
+package ejercicio01;
 
 import java.net.*;
 import java.io.*;
@@ -13,7 +13,7 @@ public class Cliente {
 
 	public void initClient() {
 		try {
-			cliente = new Socket("192.168.1.4", PUERTO);
+			cliente = new Socket("LocalHost", PUERTO);
 			System.out.println("Write....");
 			Scanner sn = new Scanner(System.in);
 			mensaje = sn.nextLine();

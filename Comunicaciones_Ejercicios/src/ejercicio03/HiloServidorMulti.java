@@ -1,4 +1,4 @@
-package ejercicio01;
+package ejercicio03;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -52,7 +52,6 @@ public class HiloServidorMulti extends Thread {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	private void enviarATodos(String mensaje) {
