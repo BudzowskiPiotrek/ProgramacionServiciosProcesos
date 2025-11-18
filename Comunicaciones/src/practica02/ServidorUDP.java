@@ -1,4 +1,4 @@
-package ejercicio04;
+package practica02;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
