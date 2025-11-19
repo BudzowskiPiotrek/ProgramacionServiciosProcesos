@@ -1,4 +1,4 @@
-package ejercicio03;
+package nue_ejercicio04;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class HiloServidorMulti extends Thread {
+	
 	public static List<Socket> lista = new ArrayList<>();
 	DataInputStream fEntrada;
 	DataOutputStream fSalida;
@@ -29,6 +30,7 @@ public class HiloServidorMulti extends Thread {
 
 	public void run() {
 		System.out.println("comunicado con :" + socket.toString());
+		enviarATodos("Se ha conectado:" + socket.getInetAddress());
 		String mensaje = "";
 
 		while (true) {
@@ -39,7 +41,8 @@ public class HiloServidorMulti extends Thread {
 			}
 			System.out.println("Recibido de " + socket + ": " + mensaje);
 
-			if (mensaje.trim().equals("*")) {
+			if (mensaje.trim().equals("FIN")) {
+				lista.remove(socket);
 				break;
 			}
 			enviarATodos(mensaje);

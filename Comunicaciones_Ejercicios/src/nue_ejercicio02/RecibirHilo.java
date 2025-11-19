@@ -1,4 +1,4 @@
-package ejercicio03;
+package nue_ejercicio02;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -16,7 +16,7 @@ public class RecibirHilo extends Thread {
 		try {
 			while (true) {
 				String respuesta = fEntrada.readUTF();
-				System.out.println("[IP:" + respuesta);
+				System.out.println(respuesta);
 			}
 		} catch (IOException e) {
 			

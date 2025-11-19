@@ -1,4 +1,4 @@
-package ejercicio03;
+package nue_ejercicio02;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -21,9 +21,7 @@ public class ClienteMulti {
 		String cadena = "";
 		RecibirHilo recibir = new RecibirHilo(flujoEntrada);
 		recibir.start();
-		System.out.println("[Pulsa enter para mandar mensaje, escribe '*' para terminar]");
 		while (!cadena.equals("*")) {
-			
 			cadena = sc.nextLine();
 			flujoSalida.writeUTF(cadena);
 		}
