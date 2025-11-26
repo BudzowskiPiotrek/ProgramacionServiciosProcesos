@@ -11,7 +11,6 @@ public class App {
 		for (int i = 0; i < 20; i++) {
 			lista[i] = new Proyecto("P" + (i + 1), impresora);
 			lista[i].start();
-
 		}
 		System.out.println("Todos los proyectos han sido recepcionados.");
 
@@ -22,7 +21,6 @@ public class App {
 				e.printStackTrace();
 			}
 		}
-
 		System.out.println("Todos Proyectos fueron imprimidos");
 	}
 }

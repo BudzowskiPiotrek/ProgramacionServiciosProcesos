@@ -7,8 +7,5 @@ public class App {
 		t.start();
 		HelloThread2 t2 = new HelloThread2(2);
 		t2.start();
-		
-		
 	}
-
 }

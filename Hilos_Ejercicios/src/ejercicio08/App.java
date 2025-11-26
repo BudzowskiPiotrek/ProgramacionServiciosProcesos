@@ -1,6 +1,7 @@
 package ejercicio08;
 
 public class App {
+	
 	// Implementar la siguiente situación mediante hilos sincronizados: En un
 	// castillo, el rey va a realizar una audiencia a tres caballeros de la corte,
 	// Cuando el rey llegue a la audiencia, saludará a sus caballeros diciendo:
@@ -18,5 +19,4 @@ public class App {
 		s2.start();
 		s3.start();
 	}
-
 }

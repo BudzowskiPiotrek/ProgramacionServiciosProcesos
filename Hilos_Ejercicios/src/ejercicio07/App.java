@@ -1,6 +1,7 @@
 package ejercicio07;
 
 public class App {
+	
 	// Implementar una solución al problema clásico del Productor-Consumidor,
 	// utilizando hilos.
 	// Nota: Implementa un retardo en la recepción del dato por parte del

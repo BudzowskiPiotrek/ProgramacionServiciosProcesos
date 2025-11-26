@@ -4,6 +4,7 @@ import ejercicio08.Hilo;
 import ejercicio08.Tuberia;
 
 public class App {
+	
 	// Modifica el programa anterior para que el rey no hable hasta que no estén
 	// todos los caballeros, y éstos no hablen hasta que el rey no haya saludado.
 
@@ -18,5 +19,4 @@ public class App {
 		s2.start();
 		s3.start();
 	}
-
 }

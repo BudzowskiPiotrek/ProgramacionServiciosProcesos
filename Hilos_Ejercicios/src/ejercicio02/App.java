@@ -3,9 +3,11 @@ package ejercicio02;
 import java.util.Scanner;
 
 public class App {
+	
 	// Crear tres hilos en el que cada uno escriba durante su ejecución el siguiente
 	// mensaje, donde el color sea introducido por teclado antes de la ejecución del
 	// hilo: "Hola, el mundo es de color [color]"
+	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
