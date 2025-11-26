@@ -30,7 +30,7 @@ public class ServidorMulti {
 				i++;
 			}
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println("Error al cocectar. Detalle de erroe: "+e.getMessage());
 		}
 	}
 }

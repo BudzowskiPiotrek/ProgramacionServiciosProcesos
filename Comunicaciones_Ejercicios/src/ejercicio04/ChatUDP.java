@@ -13,14 +13,14 @@ public class ChatUDP {
 		String tuNombre = "Pio";
 
 		DatagramSocket socket = new DatagramSocket(puertoLocal);
-		socket.setBroadcast(true); // activar mandar mensajes a la red
+		socket.setBroadcast(true); 
 		
 		InetAddress ip =  InetAddress.getByName("255.255.255.255");
 
 		System.out.println("Chat UDP escuchando en puerto " + puertoLocal);
 		System.out.println("Enviará mensajes a puertos " + puertoMin + " a " + puertoMax);
 
-		// Hilo para recibir mensajes
+		
 		Thread receptor = new Thread(new ReceptorUDP(socket, tuNombre));
 		receptor.start();
 
