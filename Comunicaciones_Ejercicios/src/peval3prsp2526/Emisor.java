@@ -16,14 +16,13 @@ public class Emisor {
 		Scanner sc = new Scanner(System.in);
 		int puertoLocal = 6000;
 		DatagramSocket socket = null;
-
 		try {
 			socket = new DatagramSocket(puertoLocal);
 			System.out.println("Cliente iniciado");
 			System.out.println("Escribe mensajes para enviar al servidor");
 			System.out.println("Escribe 'salir' para finalizar");
+			
 			InetAddress ip = InetAddress.getByName("localhost");
-
 			Thread escuchar = new Thread(new ReceptorUDP(socket, utiles));
 			escuchar.start();
 			String texto = "";
