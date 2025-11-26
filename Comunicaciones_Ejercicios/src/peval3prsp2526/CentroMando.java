@@ -9,7 +9,6 @@ import java.net.UnknownHostException;
 import java.util.Scanner;
 
 public class CentroMando {
-
 	public static void main(String[] args) {
 		Utiles utiles = new Utiles();
 		int puertoLocal = 5000;
@@ -40,7 +39,6 @@ public class CentroMando {
 					System.out.println("Error al intentar mandar mensaje");
 				}
 			}
-
 		} catch (SocketException e) {
 			System.err.println("ERROR : No se pudo abrir Socket en " + puertoLocal);
 		} catch (UnknownHostException e1) {
@@ -50,11 +48,10 @@ public class CentroMando {
 			System.out.println("ERROR  inesperado");
 			System.out.println("Detalle del error : " + e2.getMessage());
 		} finally {
-			if (socket != null && socket.isClosed()) {
+			if (socket != null) {
 				socket.close();
 				System.out.println("Socket cerrado correctamente");
 			}
 		}
-
 	}
 }
