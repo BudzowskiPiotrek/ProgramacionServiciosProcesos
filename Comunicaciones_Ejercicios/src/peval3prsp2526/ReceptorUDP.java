@@ -12,7 +12,7 @@ public class ReceptorUDP implements Runnable {
 		this.socket = socket;
 		this.utiles = utiles;
 	}
-
+	
 	public void run() {
 		byte[] datos = new byte[1024];
 		DatagramPacket p = new DatagramPacket(datos, datos.length);
@@ -24,12 +24,10 @@ public class ReceptorUDP implements Runnable {
 				System.out.println("Mensaje cifrado del servidor: " + msg);
 				System.out.println("Respuesta descifrada delservidor: " + msgDes);
 				System.out.println("\nTu mensaje: ");
-
 			} catch (IOException e) {
 				System.err.println("ERROR: al recibir mensage");
 				System.err.println("Detealle del error: " + e.getMessage());
 			}
 		}
 	}
-
 }
