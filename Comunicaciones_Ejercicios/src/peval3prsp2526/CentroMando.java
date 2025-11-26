@@ -29,7 +29,6 @@ public class CentroMando {
 				System.out.println("Mensaje descifrado: " + msgDes);
 
 				String texto = "Recibido: " + msgDes;
-
 				String textoCif = utiles.criptar(texto);
 				datos = textoCif.getBytes();
 				DatagramPacket enviar = new DatagramPacket(datos, datos.length, p.getAddress(), p.getPort());
