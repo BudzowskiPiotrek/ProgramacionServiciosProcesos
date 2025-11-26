@@ -23,29 +23,27 @@ Exploramos la gestión de tareas asíncronas, la comunicación entre procesos y 
 
 ---
 
-## 🛠️ Tecnologías y Conceptos
+## 🛠️ Tecnologías Clave y Conceptos
 
 | Tecnología | Descripción |
 | :--- | :--- |
-| **Java** | Lenguaje de programación utilizado para la concurrencia. |
-| **Threads (Hilos)** | Unidad básica de ejecución concurrente. |
-| **Sincronización** | Mecanismos para gestionar el acceso a recursos compartidos (`wait()`, `notify()`). |
-| **Java Concurrency API** | Utilidades avanzadas como `Executors`, `Callable` y `Future`. |
-| **Sistema Operativo** | Interacción con el SO para la gestión de procesos. |
+| **Java** | Lenguaje de programación principal utilizado para desarrollar todas las funcionalidades de concurrencia y comunicación. |
+| **Threads (Hilos)** | Unidad básica de ejecución concurrente, desde la creación simple hasta la gestión avanzada. |
+| **Sincronización (Monitores & Locks)** | Mecanismos para gestionar el acceso a recursos compartidos (como `wait()`, `notify()`/`notifyAll()`) y clases como `ReentrantLock` y `Semaphore`. |
+| **Sockets (TCP/UDP)** | Implementación de la comunicación en red entre procesos, incluyendo aplicaciones de cliente-servidor como chats. |
 
 ---
 
-## 📂 Estructura de Proyectos
 
-Cada carpeta en este repositorio está dedicada a un concepto o práctica específica de PSP.
+## 📚 Contenido y Progreso del Módulo PSP
 
 | Carpeta | Descripción | Estado |
 | :--- | :--- | :--- |
-| **`01_Hilos_Basicos`** | Ejercicios de creación e inicio de múltiples hilos. | ✅ Completado |
-| **`02_Sincronizacion`** | Problemas del productor/consumidor y el lector/escritor utilizando *locks* y *monitors*. | ⚙️ En Curso |
-| **`03_Pools_Executors`** | Uso de *Thread Pools* para optimizar la ejecución de tareas. | ⚙️ En Curso |
-| **`04_Comunicaciones`** | Ejercicios de comunicación entre procesos (Pipes, Sockets). | ⏳ Pendiente |
-| **`ProyectoFinal_PSP`** | Proyecto práctico que implementa múltiples hilos y sincronización. | ⏳ Pendiente |
+| **`Hilos`** | Código de ejercicios básicos de creación e inicio de múltiples hilos (Copias del temario). | ✅ Completado |
+| **`Hilos_Ejercicios`** | Soluciones y código propio desarrollado por mí, incluyendo ejercicios de **Sincronización** y **Pruebas de Validación** de este tema. | ✅ Completado |
+| **`Comunicaciones`** | Ejercicios de base sobre comunicación en la red "TCP/UDP" (Copias del temario). | ✅ Completado |
+| **`Comunicaciones_Ejercicios`** | Soluciones propias de la comunicación en red, incluyendo ejemplos de **Chats TCP/UDP** y una **Prueba de Validación** de este tema. | ✅ Completado |
+| **`Examenes_Finales`** | Carpeta destinada a incluir el **Proyecto Final** o simulacros de examen. | ⏳ Pendiente |
 
 ---
 
