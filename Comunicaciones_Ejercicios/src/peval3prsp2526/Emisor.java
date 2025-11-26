@@ -11,7 +11,6 @@ import java.util.Scanner;
 
 public class Emisor {
 	public static boolean ejecutado = true;
-
 	public static void main(String[] args) {
 		Utiles utiles = new Utiles();
 		Scanner sc = new Scanner(System.in);
@@ -38,9 +37,7 @@ public class Emisor {
 				} catch (IOException e3) {
 					System.out.println("Error al intentar mandar mensaje");
 				}
-
 			}
-
 		} catch (SocketException e) {
 			System.err.println("ERROR : No se pudo abrir Socket en " + puertoLocal);
 		} catch (UnknownHostException e1) {
