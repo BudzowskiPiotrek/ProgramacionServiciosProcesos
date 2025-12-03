@@ -4,7 +4,6 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
-import java.net.UnknownHostException;
 import java.util.Scanner;
 
 public class ClienteMulti {
@@ -27,9 +26,7 @@ public class ClienteMulti {
 			}
 			flujoEntrada.close();
 			flujoSalida.close();
-			cliente.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
